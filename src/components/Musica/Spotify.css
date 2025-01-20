@@ -1,0 +1,102 @@
+.music__content-spotify {
+  padding-bottom: 100px;
+}
+.music__title-spotify {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.music__form-spotify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.music__icon-spotify {
+  width: 70px;
+  height: 70px;
+  margin-right: 8px;
+}
+.music__input-spotify {
+  width: 350px;
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 22px;
+  line-height: 27px;
+  padding: 8px 16px;
+}
+.music__button-search {
+  padding-left: 10px;
+  background-color: #1ed760;
+  border-radius: 10px;
+  font-size: 22px;
+  line-height: 27px;
+  padding: 8px 16px;
+}
+
+.music__track-list {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.music__track:hover {
+  background-color: #bbb;
+}
+.music__track-image {
+  width: 231px;
+}
+
+.music__track-name {
+  font-family: "Baskerville";
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+.music__track-button-play {
+  font-family: "Baskerville";
+  font-weight: bold;
+  background-color: #1ed760;
+  border-radius: 10px;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+@media screen and (max-width: 425px) {
+  .music__content-spotify {
+    width: 300px;
+  }
+  .music__title-spotify {
+    font-size: 20px;
+  }
+  .music__form-spotify {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .music__icon-spotify {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+  }
+  .music__input-spotify {
+    width: 280px;
+    font-size: 18px;
+  }
+  .music__button-search {
+    font-size: 18px;
+  }
+
+  .music__track-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

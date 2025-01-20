@@ -1,0 +1,56 @@
+@font-face {
+  src: url("../../assets/Montserrat/static/Montserrat-Regular.ttf")
+    format("ttf");
+  font-family: "Montserrat";
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 330px;
+  height: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.menu__link {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: bold;
+  color: #9cbbff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+  justify-content: center;
+}
+
+.menu__link:last-of-type {
+  margin-right: 0;
+}
+
+.menu__link_active {
+  color: #437dff;
+  pointer-events: none;
+  justify-content: center;
+}
+
+/* @media screen and (max-width: 768px) {
+  .menu {
+    width: 280px;
+  }
+  .menu__link {
+    font-size: 15px;
+  }
+} */
+
+@media screen and (max-width: 425px) {
+  .menu {
+    width: 240px;
+    height: 30px;
+  }
+  .menu__link {
+    font-size: 15px;
+  }
+}
