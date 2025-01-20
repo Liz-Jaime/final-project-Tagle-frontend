@@ -1,0 +1,70 @@
+@font-face {
+  src: url("../../assets/Montserrat/static/Montserrat-Regular.ttf")
+    format("ttf");
+  font-family: "Montserrat";
+}
+
+.about__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: bold;
+  font-size: 22px;
+  color: black;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 100px;
+}
+
+.about__photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 125px;
+  filter: grayscale(100%);
+}
+
+.about__paragraph {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  padding-left: 100px;
+  text-align: justify;
+}
+
+/* @media screen and (min-width: 426px) and (max-width: 768px) {
+  .about__container {
+    flex-direction: column;
+  }
+} */
+
+@media screen and (max-width: 425px) {
+  .about__container {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about__title {
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+  .about__photo {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+  }
+  .about__paragraph {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+  }
+}

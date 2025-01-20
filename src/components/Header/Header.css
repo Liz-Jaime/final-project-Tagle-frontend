@@ -1,0 +1,94 @@
+@font-face {
+  src: url("../../assets/Montserrat/static/Montserrat-Regular.ttf")
+    format("ttf");
+  font-family: "Montserrat";
+}
+
+.header {
+  width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header__top {
+  margin: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #212121;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+.header__list-item {
+  width: 40px;
+}
+.header__logo {
+  width: 400px;
+  height: 320px;
+}
+
+.header__social-icon {
+  width: 25px;
+}
+
+.header__title {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0.7em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: black;
+  padding-top: 20px;
+}
+
+/* @media screen and (max-width: 768px) {
+  .header {
+    width: 768px;
+  }
+  .header__top {
+    height: 40px;
+  }
+
+  .header__logo {
+    width: 200px;
+    height: 160px;
+  }
+  .header__title {
+    font-size: 7px;
+    padding-top: 15px;
+  }
+  .header__social-icon {
+    width: 15px;
+  }
+  .header__list-item {
+    width: 30px;
+  }
+} */
+@media screen and (max-width: 425px) {
+  .header {
+    width: 320px;
+  }
+  .header__top {
+    height: 40px;
+  }
+  .header__logo {
+    width: 200px;
+    height: 160px;
+  }
+  .header__title {
+    font-size: 7px;
+    padding-top: 15px;
+  }
+  .header__social-icon {
+    width: 12px;
+  }
+  .header__list-item {
+    width: 20px;
+  }
+}

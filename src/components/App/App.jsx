@@ -1,38 +1,35 @@
-import { useState } from "react";
-import reactLogo from "../../assets/react.svg";
-import viteLogo from "../../../public/vite.svg";
 import "./App.css";
-
-//eliminar este material predeterminado, para poder sustituirlo por el nuestro
+import { useEffect, useState } from "react"; // Nueva importación
+import Header from "../../components/Header/Header.jsx";
+import { Routes, Route } from "react-router-dom";
+import Main from "../../components/Main/Main.jsx";
+import Musica from "../../components/Musica/Musica.jsx";
+import About from "../../components/About/About.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
+import Meditations from "../Musica/Meditations.jsx";
+import Frequencies from "../Musica/Frequencies.jsx";
+import Blog1 from "../Main/Blog1.jsx";
+import Blog2 from "../Main/Blog2.jsx";
+import Blog3 from "../Main/Blog3.jsx";
+// import api from "../../utils/api.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1>Lucila Tagle</h1>
-      <p>Salud Integral</p>
-      {/* <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-    </>
+    <div className="App">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/blog1" element={<Blog1 />} />
+        <Route path="/blog2" element={<Blog2 />} />
+        <Route path="/blog3" element={<Blog3 />} />
+        <Route path="/music" element={<Musica />}>
+          <Route path="meditations" element={<Meditations />} />
+          <Route path="frequencies" element={<Frequencies />} />
+        </Route>
+        <Route path="/about-me" element={<About />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 
